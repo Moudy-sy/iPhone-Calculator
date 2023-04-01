@@ -66,16 +66,16 @@
                 }
             }
         }
-        const equal () => {
+        function equal () {
             let sum = document.form.textview.value;
             if(sum) {
                 document.form.textview.value = eval(sum);
             }
         }
-        const clean () => {
+        function clean ()  {
             document.form.textview.value = '';
         }
-        const back () => {
+        function back () {
             let exp = document.form.textview.value;
             document.form.textview.value = exp.substring(0,exp.length - 1);
         }
